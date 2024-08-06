@@ -1,24 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import Constructor from "./methods/Constructor"; //1
+import GetDerivedStateFromProps from "./methods/GetDerivedStateFromProps";//2
+import Render from "./methods/Render"; //3
+import ComponentDidMount from "./methods/ComponentDidMount"; //4
+import ConditionalRenderComponent from "./methods/ConditionalRenderComponent"; //5
+import GetSnapShot from "./methods/GetSnapShot"; //6
+import ComponentDidUpdate from "./methods/ComponentDidUpdate"; //7
+import ComponentWillUnmount from "./methods/ComponentWillUnmount"; //8
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ComponentWillUnmount />
   );
 }
 
